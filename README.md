@@ -2,7 +2,7 @@
 
 ### Docker
 Для того, чтобы запустить приложение с помощью докера, необходимо ввести следующие команды:
-### `npm start`
+### `docker build -t neostack_frontend_app .`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
