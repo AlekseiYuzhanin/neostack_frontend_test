@@ -1,9 +1,7 @@
 # Тестовое задание Neostack на позицию Frontend-разработчика
 
-## Available Scripts
-
-In the project directory, you can run:
-
+##Docker
+Для того, чтобы запустить приложение с помощью докера, необходимо ввести следующие команды:
 ### `npm start`
 
 Runs the app in the development mode.\
