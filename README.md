@@ -1,5 +1,9 @@
 # Тестовое задание Neostack на позицию Frontend-разработчика
 
+## Установка проекта на ПК
+Чтобы скачать репозиторий на персональный компьютер, нужно ввести команду git clone [https://github.com](https://github.com/AlekseiYuzhanin/neostack_frontend_test/).
+Также репозиторий можно скачать zip-архивом
+
 ## Docker 
 Для того, чтобы запустить приложение с помощью докера, необходимо ввести следующие команды:
 ### `docker build -t neostack_frontend_app .`
