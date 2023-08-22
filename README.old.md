@@ -1,1 +1,0 @@
-# nesotack_frontend_test
