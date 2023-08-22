@@ -1,6 +1,6 @@
 # Тестовое задание Neostack на позицию Frontend-разработчика
 
-### Docker
+### <b>Docker</b>
 Для того, чтобы запустить приложение с помощью докера, необходимо ввести следующие команды:
 ### `docker build -t neostack_frontend_app .`
 ### `docker run -p 3000:3000 neostack_frontend_app.`
