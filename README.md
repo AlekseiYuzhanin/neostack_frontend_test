@@ -1,4 +1,4 @@
-# Тестовое задание Neostack на позицию Frontend-разработчика
+# Тестовое задание Neo Stack Technology на позицию Frontend-разработчика
 
 ## Установка проекта на ПК
 Чтобы скачать репозиторий на персональный компьютер, нужно ввести команду git clone https://github.com/AlekseiYuzhanin/neostack_frontend_test/.
