@@ -10,3 +10,6 @@
 .ant-tooltip-content{
     color: white;
 }
+.ant-slider-dot{
+    display: none;
+}
