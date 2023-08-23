@@ -28,7 +28,7 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
   const tipFormatter = (value: any): React.ReactNode => {
     const year = startDate.getFullYear() + Math.floor(value / 12);
     const month = (startDate.getMonth() + value) % 12;
-    const monthName = new Intl.DateTimeFormat('ru', { month: 'long' }).format(new Date(year, month));
+    let monthName = new Intl.DateTimeFormat('ru', { month: 'long' }).format(new Date(year, month));
     return (
       <div style={{ display: "flex", flexDirection: "column", textAlign: "center" }}>
         <div>
@@ -47,8 +47,9 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
     marks[(year - startDate.getFullYear()) * 12 + startDate.getMonth()] = year.toString();
   }
 
+
   return (
-    <div style={{paddingTop:"100px",padding:"100px"}}>
+    <div style={{paddingTop:"50px",padding:"30px"}}>
       <div>
         <h2>Слайдер года</h2>
       </div>
@@ -62,7 +63,7 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
         <div className='SliderComponent sliderbar'>
           <Slider
           range
-          defaultValue={[0, 56]}
+          defaultValue={[0, 12]}
           min={0}
           max={(endDate.getFullYear() - startDate.getFullYear()) * 12 + endDate.getMonth() - startDate.getMonth()}
           onChange={handleChange}
