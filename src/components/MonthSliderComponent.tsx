@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'antd/lib/slider';
+import '../styles/SliderComponent/MonthSliderComponent.css'
 
 type MonthSliderProps = {
     min: Date;
@@ -42,14 +43,14 @@ type MonthSliderProps = {
         if (monthName === 'янв.') {
             monthName = String(min.getFullYear() + yearIncrement);
             yearIncrement++; 
-    }
+        }
     
         marks[(year - min.getFullYear()) * 12 + month] = monthName;
     }
 }
   
     return (
-      <div>
+      <div >
         <Slider
           range
           value={range}

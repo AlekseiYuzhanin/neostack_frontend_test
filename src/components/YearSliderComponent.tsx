@@ -49,7 +49,7 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
 
 
   return (
-    <div style={{paddingTop:"50px",padding:"30px"}}>
+    <div style={{paddingTop:"50px",padding:"110px"}}>
       <div>
         <h2>Слайдер года</h2>
       </div>
