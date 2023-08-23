@@ -13,3 +13,7 @@
 .ant-slider-dot{
     display: none;
 }
+
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.10);
+}
