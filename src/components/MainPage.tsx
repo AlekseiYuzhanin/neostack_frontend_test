@@ -1,11 +1,11 @@
 import { FC,useState } from "react"
-import SliderComponent from "./SliderComponent"
+import SliderComponent from "./YearSliderComponent"
 
 
 const MainPage:FC = () =>{
     return (
-      <div>
-        <SliderComponent />
+      <div className="MainPage">
+        <SliderComponent min={2014} max={2021}/>
       </div>
 
   );

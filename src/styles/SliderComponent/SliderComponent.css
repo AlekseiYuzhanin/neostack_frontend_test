@@ -1,7 +1,12 @@
-.horizontal-slider {
-    width: 100%;
-    max-width: 500px;
-    height: 50px;
-    border: 1px solid grey;
-    margin: 100px;
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-tooltip .ant-tooltip-inner{
+    color: #0167B3;
+    background-color: white;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-tooltip{
+    --antd-arrow-background-color: white;
+}
+
+.ant-tooltip-content{
+    color: white;
 }
