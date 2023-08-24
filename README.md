@@ -1,5 +1,8 @@
 # Тестовое задание Neo Stack Technology на позицию Frontend-разработчика
 
+## Global
+Чтобы просмотреть задеплоеный сайт, нужно перейти по ссылке: https://deluxe-tulumba-974ac1.netlify.app/
+
 ## Установка проекта на ПК
 Чтобы скачать репозиторий на персональный компьютер, нужно ввести команду git clone https://github.com/AlekseiYuzhanin/neostack_frontend_test/.
 Также репозиторий можно скачать zip-архивом
