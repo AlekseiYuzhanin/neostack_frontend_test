@@ -49,44 +49,31 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
 
 
   return (
-    <div style={{paddingTop:"50px",padding:"110px"}}>
-      <div>
+      <div className='base'>
+      <div className='wrapper'>
+      <div className='main'>
         <h2>Слайдер года</h2>
+        <div className='description'>
+              <p>Все года</p>
+              <p>месяца</p>
+        </div>
       </div>
-      <div className='SliderComponent wrapper'>
-        <div className='SliderComponent'>
-          <p>Все года</p>
-        </div>
-        <div>
-          <p>Месяца</p>
-        </div>
-        <div className='SliderComponent sliderbar'>
-          <Slider
-          range
-          defaultValue={[0, 12]}
-          min={0}
-          max={(endDate.getFullYear() - startDate.getFullYear()) * 12 + endDate.getMonth() - startDate.getMonth()}
-          onChange={handleChange}
-          tooltipVisible={true}
-          tipFormatter={tipFormatter}
-          marks={marks}
-        />
-        </div>
-        <div>
-          <h2>Слайдер месяца</h2>
-        </div>
-        <div>
-        <div className='SliderComponent'>
-          <p>Все года</p>
-        </div>
-        <div>
-          <p>Месяца</p>
-        </div>
-        </div>
-        <MonthSliderComponent min={dateRange[0]} max={dateRange[1]}/>
+      <div className='main_slider'>
+      <Slider
+        range
+        defaultValue={[0, 12]}
+        min={0}
+        max={(endDate.getFullYear() - startDate.getFullYear()) * 12 + endDate.getMonth() - startDate.getMonth()}
+        onChange={handleChange}
+        tooltipVisible={true}
+        tipFormatter={tipFormatter}
+        marks={marks}
+      />
       </div>
     </div>
-  );
+      <MonthSliderComponent min={dateRange[0]} max={dateRange[1]}></MonthSliderComponent>
+    </div>
+  )
 };
 
 export default SliderComponent;

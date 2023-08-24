@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'antd/lib/slider';
-import '../styles/SliderComponent/MonthSliderComponent.css'
+import '../styles/SliderComponent/SliderComponent.css';
 
 type MonthSliderProps = {
     min: Date;
@@ -34,6 +34,7 @@ type MonthSliderProps = {
     const currentYear = new Date().getFullYear();
     let yearIncrement = 0; 
     
+    
     for (let year = min.getFullYear(); year <= max.getFullYear(); year++) {
         const startMonth = year === currentYear ? min.getMonth() : 0;
         const endMonth = year === max.getFullYear() ? max.getMonth() : 11;
@@ -50,8 +51,16 @@ type MonthSliderProps = {
 }
   
     return (
-      <div >
-        <Slider
+      <div className='wrapper'>
+      <div className='main'>
+        <h2>Слайдер месяца</h2>
+        <div className='description'>
+              <p>Все года</p>
+              <p>месяца</p>
+        </div>
+      </div>
+      <div className='main_slider'>
+      <Slider
           range
           value={range}
           min={0}
@@ -62,6 +71,7 @@ type MonthSliderProps = {
           marks={marks}
         />
       </div>
+    </div>
     );
   };
   
