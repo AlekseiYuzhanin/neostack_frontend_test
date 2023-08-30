@@ -3,12 +3,10 @@ import Slider from 'antd/lib/slider';
 import '../styles/SliderComponent/SliderComponent.scss';
 import ListComponent from './ListComponent';
 
-
 type RangeSliderProps = {
   startDate: Date;
   endDate: Date;
 };
-
 
 type MarksType = Record<string | number, React.ReactNode | { label: React.ReactNode; style?: React.CSSProperties }>;
 
@@ -33,7 +31,6 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
   const [toggle, setToggle] = useState('Год');
   const [yearElementColor, setYearElementColor] = useState('rgba(1, 103, 179, 1)');
   const [monthElementColor, setMonthElementColor] = useState('rgba(1, 103, 179, 1)');
-  const [isTransitioning, setIsTransitioning] = useState(false);
   
   const updateToYear = () => {
     setToggle('Год');
