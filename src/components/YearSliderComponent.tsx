@@ -99,7 +99,7 @@ const SliderComponent: React.FC<RangeSliderProps> = ({ startDate, endDate }) => 
   }));
 
   const marksObj = marksArr
-  .map((mark) => ({ [mark.id]: { label: <ListComponent items={[mark]} style={{color: 'var(--999999, #999)', listStyleType:"none", textOverflow: "ellipsis", whiteSpace:"nowrap", fontSize: "10px"}} /> } }))
+  .map((mark) => ({ [mark.id]: { label: <ListComponent items={[mark]} style={{color: 'var(--999999, #999)', listStyleType:"none", textOverflow: "ellipsis", whiteSpace:"nowrap", fontSize: "10px", width:"30px"}} /> } }))
   .reduce((acc, mark) => ({ ...acc, ...mark }), {} as MarksType);
 
   const handleMonthChange = (newValue: [number, number]) => {
@@ -151,7 +151,7 @@ const monthMarksObj = monthMarksArr
             max={(endDate.getFullYear() - startDate.getFullYear()) * monthInYear + endDate.getMonth() - startDate.getMonth()}
             onChange={handleYearChange}
             tooltip={{ formatter: yearTipFormatter, open: true, autoAdjustOverflow: true }}
-            marks={marksObj}  
+            marks={marksObj}
           />
       </div>
         :

@@ -6,7 +6,7 @@ type ListComponentProps = {
   const ListComponent: React.FC<ListComponentProps> = ({ items, style }) => {
     return (
       <div>
-        <div style={{ ...style}}>
+        <div style={{ ...style, overflow:"auto"}}>
           {items.map((item) => (
             <span key={item.id} >
               {item.text}
