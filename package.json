@@ -10,7 +10,6 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "antd": "^5.8.4",
-    "node-sass": "^9.0.0",
     "pnpm": "^8.6.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -39,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2"
   }
 }

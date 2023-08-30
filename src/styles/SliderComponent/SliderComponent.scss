@@ -1,4 +1,4 @@
-:where(.css-dev-only-do-not-override-17a39f8).ant-tooltip .ant-tooltip-inner{
+.ant-tooltip .ant-tooltip-inner{
     color: var(--color-0167-b-3, #0167B3);
     text-align: center;
     font-variant-numeric: lining-nums proportional-nums;
@@ -10,11 +10,10 @@
     background-color: white;
 }
 
-:where(.css-dev-only-do-not-override-17a39f8).ant-slider-horizontal.ant-slider-with-marks {
+.ant-slider-horizontal.ant-slider-with-marks {
      margin-bottom: 0
 }
-
-:where(.css-dev-only-do-not-override-17a39f8).ant-tooltip{
+.ant-tooltip{
     --antd-arrow-background-color: white;
 }
 
@@ -82,7 +81,7 @@ a{
         width: 85%;
     }
 
-    :where(.css-dev-only-do-not-override-17a39f8).ant-tooltip .ant-tooltip-inner{
+    .ant-tooltip .ant-tooltip-inner{
         color: var(--color-0167-b-3, #0167B3);
         text-align: center;
         font-variant-numeric: lining-nums proportional-nums;
@@ -109,8 +108,7 @@ a{
     .main_slider{
         width: 75%;
     }
-
-    :where(.css-dev-only-do-not-override-17a39f8).ant-tooltip .ant-tooltip-inner{
+    .ant-tooltip .ant-tooltip-inner{
         color: var(--color-0167-b-3, #0167B3);
         text-align: center;
         font-variant-numeric: lining-nums proportional-nums;
